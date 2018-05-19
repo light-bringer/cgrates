@@ -39,6 +39,7 @@ RUN wget http://www.cgrates.org/tmp_pkg/cgrates_0.9.1~rc8_amd64.deb \
 # cleanup
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+ADD start.sh /root/start.sh
 # set start command
-CMD /root/code/data/docker/prod/start.sh
+CMD /root/start.sh
 
