@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:jessie
 MAINTAINER Radu Fericean, rif@cgrates.org
 
 # set mysql password
